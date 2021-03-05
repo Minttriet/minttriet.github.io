@@ -166,23 +166,6 @@ a:hover, a:focus, a:active {
   border-bottom: 1px solid #f2f2f2;
 }
 
-.probootstrap-top-quick-contact-info {
-  padding-top: 7px;
-  padding-bottom: 7px;
-  font-size: 12px;
-}
-
-.probootstrap-top-quick-contact-info span {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-.probootstrap-top-quick-contact-info span i {
-  display: inline-block;
-  margin-right: 10px;
-  color: #49D292;
-}
-
 .probootstrap-top-social {
   text-align: right;
 }
@@ -191,32 +174,6 @@ a:hover, a:focus, a:active {
   .probootstrap-top-social {
     text-align: left;
   }
-}
-
-.probootstrap-top-social ul {
-  padding: 0;
-  margin: 5px 0 0 0;
-}
-
-.probootstrap-top-social ul li {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: inline-block;
-}
-
-.probootstrap-top-social ul li a {
-  display: inline-block;
-  padding: 4px;
-  color: #49D292;
-}
-
-.probootstrap-top-social ul li:last-child a {
-  padding-right: 0;
-}
-
-.probootstrap-search-icon {
-  margin-left: 30px;
 }
 
 .probootstrap-navbar {
