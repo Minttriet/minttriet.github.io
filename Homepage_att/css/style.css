@@ -1155,6 +1155,10 @@ a:hover, a:focus, a:active {
   font-weight: 300;
 }
 
+.probootstrap-footer .probootstrap-footer-widget p {
+  text-align: right;
+}
+
 .probootstrap-footer .probootstrap-footer-widget ul {
   margin: 0;
   padding: 0 0 20px 0;
