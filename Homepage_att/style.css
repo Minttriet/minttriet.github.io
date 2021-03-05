@@ -20,7 +20,7 @@ body {
 
 h1, h2, h3, h4, h5, h6
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  color: #595E65;
+  color: #181920;
   line-height: 1.5;
   font-family: Nadeem, 'Nadeem Regular', serif;
   font-weight: 300;
@@ -961,7 +961,7 @@ a:hover, a:focus, a:active {
 }
 
 .probootstrap-section.probootstrap-section-colored {
-  background: #FCF0E0 0% 0% no-repeat padding-box;
+  background: #FCF0E0;
 }
 
 .probootstrap-section.probootstrap-section-colored .section-heading h2 {
