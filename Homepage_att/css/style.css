@@ -436,8 +436,8 @@ a:hover, a:focus, a:active {
 }
 
 .probootstrap-navbar .navbar-nav > li > a {
-  color: black;
-  font-size: 15px;
+  color: #595E65;
+  font-size: 18px;
   position: relative;
 }
 
