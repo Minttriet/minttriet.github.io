@@ -4,7 +4,7 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>Profile</title>
+	<title>Admin Profile</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -47,11 +47,16 @@
 										<p>Table List</p>
 								</a>
 						</li>
-						<li>
-								<a href="notifications.html">
-										<i class="pe-7s-bell"></i>
-										<p>Notifications</p>
+						<li class= "dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<b class="caret hidden-sm hidden-xs"></b>
+										<p>Manage<b class="caret"></b></p>
 								</a>
+								<ul class="dropdown-menu-2">
+									<li><a href="#">Manage Student</a></li>
+									<li><a href="#">Manage Marketing Manager</a></li>
+									<li><a href="#">Manage Marketing Coordinator</a></li>
+								</ul>
 						</li>
 				</ul>
     	</div>
@@ -109,6 +114,7 @@
         <div class="content">
             <div class="container-fluid">
                 <div class="row">
+
                     <div class="col-md-8">
                         <div class="card">
                             <div class="header">
@@ -191,26 +197,27 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card card-user">
-                            <div class="image">
-                                <img src="https://ununsplash.imgix.net/photo-1431578500526-4d9613015464?fit=crop&fm=jpg&h=300&q=75&w=400" alt="..."/> <!-- user profile background here -->
-                            </div>
-                            <div class="content">
-                                <div class="author">
-                                     <a href="#">
-                                    <img class="avatar border-gray" src="img/default-avatar.png" alt="User Avatar"/> <!-- user profile avatar here -->
 
-                                      <h4 class="title">A<br />
-                                         <small>B</small>
-                                      </h4>
-                                    </a>
-                                </div>
-                                <p class="description text-center"></p>
-                            </div>
-                            <hr>
-                        </div>
-                    </div>
+										<div class="col-md-4">
+												<div class="card card-user">
+														<div class="image">
+																<img src="https://ununsplash.imgix.net/photo-1431578500526-4d9613015464?fit=crop&fm=jpg&h=300&q=75&w=400" alt="..."/> <!-- user profile background here -->
+														</div>
+														<div class="content">
+																<div class="author">
+																		 <a href="#">
+																		<img class="avatar border-gray" src="img/default-avatar.png" alt="User Avatar"/> <!-- user profile avatar here -->
+
+																			<h4 class="title">A<br />
+																				 <small>B</small>
+																			</h4>
+																		</a>
+																</div>
+																<p class="description text-center"></p>
+														</div>
+														<hr>
+												</div>
+										</div>
 
                 </div>
             </div>
