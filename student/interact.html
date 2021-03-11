@@ -118,7 +118,7 @@
 																			<th>File Doc/Docx Name</th>
 																			<th>File Image Name</th>
 																			<th>Status</th>
-																			<th>Description</th>
+																			<th>Description</th> <!-- Encrypted -->
 																		</thead>
 																		<tbody>
 
@@ -129,31 +129,26 @@
 																					<td>LờMao.jpg</td>
 																					<td>Passed</td>
 																					<td>ĐẳkĐẳkBủhBủhLờMao</td>
-																					<td><a href="interact.html">View Comment</a></td>
+																					<td></td>
 																				</tr>
 
 																		</tbody>
 																</table>
 														</div>
 												</div>
-												<button class="btn btn-info btn-fill pull-right" onclick="openForm()">New Entry</button>
 
-												<div class="form-popup" id="myForm">
-												  <form action="#" class="form-container">
-												    <h1>Upload</h1>
+												<div id="wrapper">
+												  <div id="menu">
+												        <h2> Comment </h2></b></p>
+												        <div style="clear:both"></div>
+												    </div>
 
-												    <label for="docx"><b>Docx File</b></label>
-												    <input type="file" placeholder="Docx" required>
+												    <div id="commentbox"></div>
 
-												    <label for="img"><b>Image File</b></label>
-												    <input type="file" placeholder="Image" required>
-
-														<label for="desc"><b>Description</b></label>
-												    <input type="text" placeholder="Description">
-
-												    <button type="submit" class="btn">Submit</button>
-												    <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
-												  </form>
+												    <form name="message" action="">
+												        <input name="usermsg" type="text" id="usermsg" size="63" />
+												        <input name="submitmsg" type="submit"  id="submitmsg" value="Send" />
+												    </form>
 												</div>
 
 										</div>
