@@ -138,6 +138,36 @@
 														</div>
 												</div>
 
+													<div class="row">
+														<div class="col-md-12">
+															<div class="buttons pull-right">
+																<button type="button" name="btnEdit" class="btn btn-fill btn-info" style="width:100px" onclick="openForm()">Edit</button>
+																<button type="submit" name="btnEdit" class="btn btn-fill btn-info" style="width:100px">Remove</button>
+															</div>
+														</div>
+													</div>
+
+													<div class="form-popup" id="myForm">
+														<form action="#" class="form-container">
+															<h2 style="text-align:center">Upload</h2>
+
+															<label for="docx"><b>Docx File Only</b></label>
+															<input type="file" placeholder="Docx" accept=".docx, .doc" required>
+
+															<label for="img"><b>Image File Only</b></label>
+															<input type="file" placeholder="Image" accept="image/*" required>
+
+															<label for="desc"><b>Description</b></label>
+															<textarea name="Description" class="form-control"></textarea>
+
+															<div class="buttons">
+																<button type="submit" class="btn">Save</button>
+																<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+															</div>
+
+														</form>
+													</div>
+
 												<div class="content">
 													<div class="container-fluid">
 														<div class="row">
