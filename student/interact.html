@@ -142,7 +142,7 @@
 														<div class="col-md-12">
 															<div class="buttons pull-right">
 																<button type="button" name="btnEdit" class="btn btn-fill btn-info" style="width:100px" onclick="openForm()">Edit</button>
-																<button type="submit" name="btnEdit" class="btn btn-fill btn-info" style="width:100px">Remove</button>
+																<button type="submit" name="btnEdit" class="btn btn-fill btn-info" style="width:100px" onclick="openalertForm()">Remove</button>
 															</div>
 														</div>
 													</div>
@@ -163,6 +163,18 @@
 															<div class="buttons">
 																<button type="submit" class="btn">Save</button>
 																<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+															</div>
+
+														</form>
+													</div>
+
+													<div class="form-popup" id="alertForm">
+														<form action="#" class="form-container">
+															<h2 style="text-align:center">Alert</h2>
+															<p style="text-align:center">Are you sure you want to remove submission</p>
+															<div class="buttons">
+																<button type="button" class="btn">Yes</button>
+																<button type="button" class="btn cancel" onclick="closealertForm()">No</button>
 															</div>
 
 														</form>
