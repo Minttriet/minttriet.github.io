@@ -30,12 +30,24 @@
     <!--   you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple" -->
     	<div class="sidebar-wrapper">
 				<ul class="nav">
-						<li  class="active">
-								<a href="upload.html">
-										<i class="pe-7s-upload"></i>
-										<p>Upload</p>
-								</a>
-						</li>
+					<li >
+							<a href="dashboard.html">
+									<i class="pe-7s-graph"></i>
+									<p>Dashboard</p>
+							</a>
+					</li>
+					<li>
+							<a href="view.html">
+									<i class="pe-7s-study"></i>
+									<p>Manage Upload</p>
+							</a>
+					</li>
+					<li class="active">
+							<a href="upload.html">
+									<i class="pe-7s-upload"></i>
+									<p>Upload Magazine</p>
+							</a>
+					</li>
 				</ul>
     	</div>
     </div>
@@ -53,16 +65,15 @@
 											<a class="navbar-brand" href="#">Upload</a>
 									</div>
 	                <div class="collapse navbar-collapse">
-	                    <ul class="nav navbar-nav navbar-right">
-
-													<li>
-	                           <a href="profile.html">
-	                               <img src="../Dashboard_att/img/doge.png" alt="Avatar" height="30" width="30" style="border-radius:50px"><label style="margin-left: 10px">user123</label>
-	                            </a>
-	                        </li>
-													<li><a href="#"><label style="margin-top:2px">Logout</label></a></li>
-													<li class="separator hidden-lg hidden-md"></li>
-	                    </ul>
+										<ul class="nav navbar-nav navbar-right">
+												<li>
+													 <a href="profile.html">
+															 <img src="../Dashboard_att/img/avatar.jpg" alt="Avatar" height="30" width="30" style="border-radius:50px"><label style="margin-left: 10px">user123</label>
+														</a>
+												</li>
+												<li><a href="#"><label style="margin-top:2px">Logout</label></a></li>
+												<li class="separator hidden-lg hidden-md"></li>
+										</ul>
 	                </div>
 	            </div>
 	        </nav>
@@ -83,27 +94,17 @@
 																		<thead>
 																			<th>No.</th>
 																			<th>Date</th>
-																			<th>File Doc/Docx Name</th>
+																			<th>File PDF Name</th>
 																			<th>File Image Name</th>
-																			<th>Description</th>
-																			<th>Status</th>
 																		</thead>
 																		<tbody>
 
 																				<tr> <!-- First MC -->
 																					<td>1</td>
-																					<td>10/03/2021</td>
-																					<td>BủhBủh.docx</td>
-																					<td>LờMao.jpg</td>
-																					<td>ĐẳkĐẳkBủhBủhLờMao</td>
-																					<td>Passed</td>
-																					<td><a href="interact.html">View Comment</a></td>
-																					<td>
-																						<div class="button">
-																							<i class="fa fa-bell"></i>
-    																					<span class="button__badge">1</span>
-																						</div>
-																					</td>
+																					<td>16/03/2021</td>
+																					<td>Upload1.pdf</td>
+																					<td>Upload2.jpg</td>
+																					<td><a href="editupload.html">View Upload</a></td>
 																				</tr>
 
 																		</tbody>
@@ -114,20 +115,13 @@
 
 												<div class="form-popup" id="myForm">
 													<form action="#" class="form-container">
-														<h2 style="text-align:center">Upload</h2>
+														<h2 style="text-align:center">Upload Magazine</h2>
 
-														<label for="docx"><b>Docx File Only</b></label>
-														<input type="file" placeholder="Docx" accept=".docx, .doc" required>
+														<label for="docx"><b>PDF File Only</b></label>
+														<input type="file" placeholder="pdf" accept=".pdf" required>
 
 														<label for="img"><b>Image File Only</b></label>
 														<input type="file" placeholder="Image" accept="image/*" required>
-
-														<label for="desc"><b>Description</b></label>
-														<textarea name="Description" class="form-control"></textarea>
-
-														<div class="terms" style="text-align:center">
-															<input type="checkbox" name="checkbox" value="check" id="agree" required/> I have read and agree to the <a href="#" style="color:orange">Terms and Conditions </a>
-														</div>
 
 														<div class="buttons">
 															<button type="submit" class="btn">Save</button>
