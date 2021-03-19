@@ -30,6 +30,71 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
     <link href="./Dashboard/css/pe-icon-7-stroke.css" rel="stylesheet" />
 
+		<style>
+		* {
+		  box-sizing: border-box;
+		}
+
+		input[type=text], select, textarea {
+		  width: 100%;
+		  padding: 12px;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  resize: vertical;
+		}
+
+		label {
+		  padding: 12px 12px 12px 0;
+		  display: inline-block;
+		}
+
+		input[type=submit] {
+		  background-color: #4CAF50;
+		  color: white;
+		  padding: 12px 20px;
+		  border: none;
+		  border-radius: 4px;
+		  cursor: pointer;
+		  float: right;
+		}
+
+		input[type=submit]:hover {
+		  background-color: #45a049;
+		}
+
+		.container {
+		  border-radius: 5px;
+		  background-color: #f2f2f2;
+		  padding: 20px;
+		}
+
+		.col-25 {
+		  float: left;
+		  width: 25%;
+		  margin-top: 6px;
+		}
+
+		.col-75 {
+		  float: left;
+		  width: 75%;
+		  margin-top: 6px;
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+
+		/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+		@media screen and (max-width: 600px) {
+		  .col-25, .col-75, input[type=submit] {
+		    width: 100%;
+		    margin-top: 0;
+		  }
+		}
+		</style>
 </head>
 <body>
 
@@ -183,151 +248,49 @@
             </div>
         </nav>
 
-				<div class="content">
-						<div class="container-fluid">
-								<div class="row">
-										<div class="col-md-10 justify-content-center" style="margin-left: 5%; margin-right: 5%">
-											<div class="card">
-													<div class="header">
-															<h4 class="title" style="text-align:center">View Magazine</h4>
-													</div>
-
-													<div class="content table-responsive table-full-width">
-															<table class="table table-hover table-striped" style="text-align:center">
-																	<tbody>
-
-																			<tr class>
-																				<th style="text-align:right" scope="row"> Full Name:</th>
-																				<td>REEEEEEEEE</td>
-																			</tr>
-
-																			<tr class>
-																				<th style="text-align:right" scope="row"> Open Date:</th>
-																				<td>6/9/420</td>
-																			</tr>
-
-																			<tr class>
-																				<th style="text-align:right" scope="row"> Close Date:</th>
-																				<td>9/6/420</td>
-																			</tr>
-
-																			<tr class>
-																				<th style="text-align:right" scope="row"> Status:</th>
-																				<td>...</td>
-																			</tr>
-																	</tbody>
-															</table>
-													</div>
-											</div>
-											<div class="buttons" style="margin-top: 10px; margin-bottom: 10px;position: relative;text-align: center;">
-																<a href="edit.html" type="button" name="btnEdit" class="btn btn-fill btn-info" style="width:100px" >Edit</a>
-																<a type="submit" name="btnEdit" class="btn btn-fill btn-info" style="width:100px" >Remove</a>
-											</div>
-										</div>
-									</div>
-							</div>
-					</div>
-
-        <div class="content">
-            <div class="container-fluid">
-                <div class="row">
-                  	<div class="col-md-10 justify-content-center" style="margin-left: 5%; margin-right: 5%">
-											<div class="card">
-													<div class="header">
-															<h4 class="title" style="text-align:center">View User</h4>
-													</div>
-													<div class="content table-responsive table-full-width">
-															<table class="table table-hover table-striped" style="text-align:center">
-																	<tbody>
-
-																			<tr class>
-																				<th scope="row" style="text-align:right"> Username:</th>
-																				<td>user123</td>
-																			</tr>
-
-																			<tr class>
-																				<th scope="row" style="text-align:right"> Full Name:</th>
-																				<td>Nguyễn Văn A</td>
-																			</tr>
-
-																			<tr class>
-																				<th scope="row" style="text-align:right"> Date Of Birth:</th>
-																				<td>6/9/420</td>
-																			</tr>
-
-																			<tr class>
-																				<th scope="row" style="text-align:right"> Tel:</th>
-																				<td>0123456789</td>
-																			</tr>
-
-																			<tr class>
-																				<th scope="row" style="text-align:right">Email</th>
-																				<td>nevergonnagiveyouup@rickroll.com</td>
-																			</tr>
-
-																			<tr class>
-																				<th scope="row" style="text-align:right">Role</th>
-																				<td>Marketing Manager</td>
-																			</tr>
-																	</tbody>
-															</table>
-													</div>
-											</div>
-											<div class="buttons" style="margin-top: 10px; margin-bottom: 10px;position: relative;text-align: center;">
-																<a href="editaccount.html" type="button" name="btnEdit" class="btn btn-fill btn-info" style="width:100px" >Edit</a>
-																<a type="submit" name="btnEdit" class="btn btn-fill btn-info" style="width:100px" >Remove</a>
-											</div>
-										</div>
-									</div>
-							</div>
-					</div>
-
-					<div class="content">
-	            <div class="container-fluid">
-	                <div class="row">
-	                  	<div class="col-md-10 justify-content-center" style="margin-left: 5%; margin-right: 5%">
-												<div class="card">
-														<div class="header">
-																<h4 class="title" style="text-align:center">View </h4>
-														</div>
-
-														<div class="content table-responsive table-full-width">
-																<table class="table table-hover table-striped" style="text-align:center">
-																		<tbody>
-
-																				<tr class>
-																					<th style="text-align:right" scope="row"> Submit Date:</th>
-																					<td>10/03/2021</td>
-																				</tr>
-
-																				<tr class>
-																					<th style="text-align:right" scope="row"> File Name:</th>
-																					<td>BủhBủh.docx </br> LờMaoLờMao.jpg</td>
-																				</tr>
-
-																				<tr class>
-																					<th style="text-align:right" scope="row"> Description:</th>
-																					<td>ĐẳkĐẳkBủhBủhLờMao</td>
-																				</tr>
-
-																				<tr class>
-																					<th style="text-align:right" scope="row"> Status:</th>
-																					<td><span class='badge' style='min-width:100px; display:inline-block; padding:4px 2px; background:green'>Passed</span></td>
-																				</tr>
-																		</tbody>
-																</table>
-														</div>
-												</div>
-												<div class="buttons" style="margin-top: 10px; margin-bottom: 10px;position: relative;text-align: center;">
-																	<a href="edit.html" type="button" name="btnEdit" class="btn btn-fill btn-info" style="width:100px" >Edit</a>
-																	<a type="submit" name="btnEdit" class="btn btn-fill btn-info" style="width:100px" >Remove</a>
-												</div>
-											</div>
-										</div>
-								</div>
-						</div>
-
-
+				<div class="container">
+				  <form>
+				  <div class="row">
+				    <div class="col-25">
+				      <label for="fname">First Name</label>
+				    </div>
+				    <div class="col-75">
+				      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+				    </div>
+				  </div>
+				  <div class="row">
+				    <div class="col-25">
+				      <label for="lname">Last Name</label>
+				    </div>
+				    <div class="col-75">
+				      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+				    </div>
+				  </div>
+				  <div class="row">
+				    <div class="col-25">
+				      <label for="country">Country</label>
+				    </div>
+				    <div class="col-75">
+				      <select id="country" name="country">
+				        <option value="australia">Australia</option>
+				        <option value="canada">Canada</option>
+				        <option value="usa">USA</option>
+				      </select>
+				    </div>
+				  </div>
+				  <div class="row">
+				    <div class="col-25">
+				      <label for="subject">Subject</label>
+				    </div>
+				    <div class="col-75">
+				      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+				    </div>
+				  </div>
+				  <div class="row">
+				    <input type="submit" value="Submit">
+				  </div>
+				  </form>
+				</div>
 
         <footer class="footer">
             <div class="container-fluid">
