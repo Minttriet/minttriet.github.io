@@ -24,6 +24,8 @@
     <!--  CSS for Demo Purpose, don't include it in your project     -->
     <link href="../dashboard/css/demo.css" rel="stylesheet" />
 
+    <link href="../dashboard/css/dropdown.css" rel="stylesheet" />
+
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
@@ -43,10 +45,8 @@
     -->
 
             <div class="sidebar-wrapper">
-                <div class="logo">
-                    <a href="http://www.creative-tim.com" class="simple-text">
-                        Creative Tim
-                    </a>
+                <div class="logo" style="padding:14px">
+                    <img src="../dashboard/img/logo.png" width="100%" height="100%" class="simple-text">
                 </div>
 
                 <ul class="nav">
@@ -136,39 +136,59 @@
                         <div class="col-md-10 justify-content-center" style="margin-left: 5%; margin-right: 5%">
                             <div class="card">
                                 <div class="header">
-                                    <h4 class="title" style="text-align:center">Create ACCOUNT</h4>
+                                    <h4 class="title" style="text-align:center">Create Account</h4>
                                 </div>
                                 <div class="content table-responsive">
                                     <div class="card-body">
                                         <form>
                                             <div class="row">
-                                                <div class="col-md-8">
+                                                <div class="col-md-4">
                                                     <div class="form-group">
                                                         <label>Username</label>
-                                                        <input type="text" class="form-control" placeholder=""
-                                                            value="">
+                                                        <input type="text" class="form-control" placeholder="" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-4">
-                                                  <a href="#" class="btn dropdown-toggle" data-toggle="dropdown">Regular<b class="caret"></b></a>
-                                                  <ul class="dropdown-menu">
-                                                    <button class="dropdown-item" type="button">Action</button>
-                                                    <button class="dropdown-item" type="button">Another action</button>
-                                                    <button class="dropdown-item" type="button">Something else here</button>
-                                                    <li class="divider"></li>
-                                                    <button class="dropdown-item" type="button">Separated link</button>
-                                                    <li class="divider"></li>
-                                                    <button class="dropdown-item" type="button">The last one</button>
-                                                  </ul>
+                                                  <div class="form-group">
+                                                    <div class="box" >
+                                                      <label for="">Select Faculty</label>
+                                                      <select id="Faculty" aria-required="true" aria-invalid="false">
+                                                        <option value="--Select--" selected="selected">--Select--</option>
+                                                        <option value="IT">IT</option>
+                                                        <option value="Business">Business</option>
+                                                        <option value="Design">Design</option>
+                                                        <option value="Law">Law</option>
+                                                      </select>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                  <div class="form-group">
+                                                    <div class="box" >
+                                                      <label for="">Select Role</label>
+                                                      <select id="Role" aria-required="true" aria-invalid="false">
+                                                        <option value="--Select--" selected="selected">--Select--</option>
+                                                        <option value="Admin">Admin</option>
+                                                        <option value="MarketingManager">Marketing Manager</option>
+                                                        <option value="MarketingCoordinator">Marketing Coordinator</option>
+                                                        <option value="Student">Student</option>
+                                                      </select>
+                                                    </div>
+                                                  </div>
                                                 </div>
                                             </div>
 
                                             <div class="row">
-                                                <div class="col-md-12">
+                                                <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label>Full Name</label>
-                                                        <input type="text" class="form-control" placeholder=""
-                                                            value="Lạy Trúa Trên Cao, Turn Down For What" required>
+                                                        <input type="text" class="form-control" placeholder="" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Address</label>
+                                                        <input type="text" class="form-control" placeholder="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -177,7 +197,16 @@
                                                 <div class="col-md-12">
                                                     <div class="form-group">
                                                         <label>Date Of Birth</label>
-                                                        <input type="datetime-local" class="form-control" placeholder="" value="">
+                                                        <input type="datetime-local" class="form-control" placeholder="">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label>Email</label>
+                                                        <input type="email" class="form-control" placeholder="" required>
                                                     </div>
                                                 </div>
                                             </div>
@@ -186,26 +215,15 @@
                                                 <div class="col-md-12">
                                                     <div class="form-group">
                                                         <label>Telephone Number</label>
-                                                        <input type="number" class="form-control" placeholder="" value="">
+                                                        <input type="number" class="form-control" placeholder="" required>
                                                     </div>
                                                 </div>
                                             </div>
-
-
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="form-group">
-                                                        <label>Email</label>
-                                                        <input type="email" class="form-control" placeholder="" value="">
-                                                    </div>
-                                                </div>
+                                            
+                                            <div style="margin-top: 10px; margin-bottom: 10px; position: relative; text-align: center;">
+                                                <button type="submit" class="btn btn-fill btn-info" style="margin:10px; box-shadow:0 1px 2px rgb(0 0 0 / 5%), 0 0 0 1px rgb(63 63 68 / 10%)">Create Account</button>
                                             </div>
                                         </form>
-                                    </div>
-                                    <div
-                                        style="margin-top: 10px; margin-bottom: 10px; position: relative; text-align: center;">
-                                        <button type="submit" class="btn btn-info btn-fill"
-                                            style="margin:10px; box-shadow:0 1px 2px rgb(0 0 0 / 5%), 0 0 0 1px rgb(63 63 68 / 10%)">Create Account</button>
                                     </div>
                                 </div>
                             </div>
@@ -237,6 +255,6 @@
 <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
 <script src="../dashboard/js/light-bootstrap-dashboard.js?v=1.4.0"></script>
 
-</script>
+<script src="../dashboard/js/validateselect.js"></script>
 
 </html>
