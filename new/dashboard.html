@@ -25,6 +25,8 @@
     <!--  CSS for Demo Purpose, don't include it in your project     -->
     <link href="./Dashboard/css/demo.css" rel="stylesheet" />
 
+    <link href="./Dashboard/css/dropdown.css" rel="stylesheet" />
+
 
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -46,11 +48,9 @@
     -->
 
             <div class="sidebar-wrapper">
-                <div class="logo">
                   <div class="logo" style="padding:14px">
-                      <img src="../dashboard/img/logo.png" width="100%" height="100%" class="simple-text">
+                      <img src="./dashboard/img/logo.png" width="100%" height="100%" class="simple-text">
                   </div>
-                </div>
 
                 <ul class="nav">
                     <li class="active">
@@ -141,21 +141,21 @@
                             <div class="card">
 
                                 <div class="header">
-                                    <h4 class="title">Email Statistics</h4>
-                                    <p class="category">Last Campaign Performance</p>
+                                    <h4 class="title">Total Contribution Statistics</h4>
+                                    <p class="category">123</p>
                                 </div>
                                 <div class="content">
                                     <div id="chartPreferences" class="ct-chart ct-perfect-fourth"></div>
 
                                     <div class="footer">
                                         <div class="legend">
-                                            <i class="fa fa-circle text-info"></i> Open
-                                            <i class="fa fa-circle text-danger"></i> Bounce
-                                            <i class="fa fa-circle text-warning"></i> Unsubscribe
+                                            <i class="fa fa-circle text-info"></i> Law
+                                            <i class="fa fa-circle text-danger"></i> IT
+                                            <i class="fa fa-circle text-warning"></i> Design
                                         </div>
                                         <hr>
                                         <div class="stats">
-                                            <i class="fa fa-clock-o"></i> Campaign sent 2 days ago
+                                            <i class="fa fa-clock-o"></i> Update 1 day ago
                                         </div>
                                     </div>
                                 </div>
@@ -164,10 +164,25 @@
 
                         <div class="col-md-8">
                             <div class="card">
-                                <div class="header">
-                                    <h4 class="title">Users Behavior</h4>
-                                    <p class="category">24 Hours performance</p>
-                                </div>
+                              <div class="box2" style="padding: 20px 30px 0px">
+                                <label for="academicyear">Select Academic Year</label>
+                                <select class="academicyear" name="AcademicYear">
+                                  <option value="select">--Select--</option>
+                                  <optgroup label="IT">
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                  </optgroup>
+                                  <optgroup label="Design">
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                  </optgroup>
+                                  <optgroup label="Law">
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                  </optgroup>
+
+                                </select>
+                              </div>
                                 <div class="content">
                                     <div id="chartHours" class="ct-chart"></div>
                                     <div class="footer">
@@ -185,177 +200,6 @@
                             </div>
                         </div>
                     </div>
-
-
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="card ">
-                                <div class="header">
-                                    <h4 class="title">2014 Sales</h4>
-                                    <p class="category">All products including Taxes</p>
-                                </div>
-                                <div class="content">
-                                    <div id="chartActivity" class="ct-chart"></div>
-
-                                    <div class="footer">
-                                        <div class="legend">
-                                            <i class="fa fa-circle text-info"></i> Tesla Model S
-                                            <i class="fa fa-circle text-danger"></i> BMW 5 Series
-                                        </div>
-                                        <hr>
-                                        <div class="stats">
-                                            <i class="fa fa-check"></i> Data information certified
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="card ">
-                                <div class="header">
-                                    <h4 class="title">Tasks</h4>
-                                    <p class="category">Backend development</p>
-                                </div>
-                                <div class="content">
-                                    <div class="table-full-width">
-                                        <table class="table">
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <div class="checkbox">
-                                                            <input id="checkbox1" type="checkbox">
-                                                            <label for="checkbox1"></label>
-                                                        </div>
-                                                    </td>
-                                                    <td>Sign contract for "What are conference organizers afraid of?"
-                                                    </td>
-                                                    <td class="td-actions text-right">
-                                                        <button type="button" rel="tooltip" title="Edit Task"
-                                                            class="btn btn-info btn-simple btn-xs">
-                                                            <i class="fa fa-edit"></i>
-                                                        </button>
-                                                        <button type="button" rel="tooltip" title="Remove"
-                                                            class="btn btn-danger btn-simple btn-xs">
-                                                            <i class="fa fa-times"></i>
-                                                        </button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="checkbox">
-                                                            <input id="checkbox2" type="checkbox" checked>
-                                                            <label for="checkbox2"></label>
-                                                        </div>
-                                                    </td>
-                                                    <td>Lines From Great Russian Literature? Or E-mails From My Boss?
-                                                    </td>
-                                                    <td class="td-actions text-right">
-                                                        <button type="button" rel="tooltip" title="Edit Task"
-                                                            class="btn btn-info btn-simple btn-xs">
-                                                            <i class="fa fa-edit"></i>
-                                                        </button>
-                                                        <button type="button" rel="tooltip" title="Remove"
-                                                            class="btn btn-danger btn-simple btn-xs">
-                                                            <i class="fa fa-times"></i>
-                                                        </button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="checkbox">
-                                                            <input id="checkbox3" type="checkbox">
-                                                            <label for="checkbox3"></label>
-                                                        </div>
-                                                    </td>
-                                                    <td>Flooded: One year later, assessing what was lost and what was
-                                                        found when a ravaging rain swept through metro Detroit
-                                                    </td>
-                                                    <td class="td-actions text-right">
-                                                        <button type="button" rel="tooltip" title="Edit Task"
-                                                            class="btn btn-info btn-simple btn-xs">
-                                                            <i class="fa fa-edit"></i>
-                                                        </button>
-                                                        <button type="button" rel="tooltip" title="Remove"
-                                                            class="btn btn-danger btn-simple btn-xs">
-                                                            <i class="fa fa-times"></i>
-                                                        </button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="checkbox">
-                                                            <input id="checkbox4" type="checkbox" checked>
-                                                            <label for="checkbox4"></label>
-                                                        </div>
-                                                    </td>
-                                                    <td>Create 4 Invisible User Experiences you Never Knew About</td>
-                                                    <td class="td-actions text-right">
-                                                        <button type="button" rel="tooltip" title="Edit Task"
-                                                            class="btn btn-info btn-simple btn-xs">
-                                                            <i class="fa fa-edit"></i>
-                                                        </button>
-                                                        <button type="button" rel="tooltip" title="Remove"
-                                                            class="btn btn-danger btn-simple btn-xs">
-                                                            <i class="fa fa-times"></i>
-                                                        </button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="checkbox">
-                                                            <input id="checkbox5" type="checkbox">
-                                                            <label for="checkbox5"></label>
-                                                        </div>
-                                                    </td>
-                                                    <td>Read "Following makes Medium better"</td>
-                                                    <td class="td-actions text-right">
-                                                        <button type="button" rel="tooltip" title="Edit Task"
-                                                            class="btn btn-info btn-simple btn-xs">
-                                                            <i class="fa fa-edit"></i>
-                                                        </button>
-                                                        <button type="button" rel="tooltip" title="Remove"
-                                                            class="btn btn-danger btn-simple btn-xs">
-                                                            <i class="fa fa-times"></i>
-                                                        </button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="checkbox">
-                                                            <input id="checkbox6" type="checkbox" checked>
-                                                            <label for="checkbox6"></label>
-                                                        </div>
-                                                    </td>
-                                                    <td>Unfollow 5 enemies from twitter</td>
-                                                    <td class="td-actions text-right">
-                                                        <button type="button" rel="tooltip" title="Edit Task"
-                                                            class="btn btn-info btn-simple btn-xs">
-                                                            <i class="fa fa-edit"></i>
-                                                        </button>
-                                                        <button type="button" rel="tooltip" title="Remove"
-                                                            class="btn btn-danger btn-simple btn-xs">
-                                                            <i class="fa fa-times"></i>
-                                                        </button>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-
-                                    <div class="footer">
-                                        <hr>
-                                        <div class="stats">
-                                            <i class="fa fa-history"></i> Updated 3 minutes ago
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
 
             <!---View Magazine--->
@@ -412,7 +256,7 @@
                                                 <td>4/5/2020</td>
                                                 <td>2/3/2020</td>
                                                 <td>.....</td>
-                                                <td><a href="./edit/editmagazine.html">View</a> | <a href="#">Delete</a></td>>
+                                                <td><a href="./edit/editmagazine.html">View</a> | <a href="#">Delete</a></td>
                                             </tr>
                                             <tr>
                                                 <td>4</td>
@@ -650,6 +494,8 @@
 
 <!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
 <script src="./Dashboard/js/demo.js"></script>
+
+<script type="text/javascript" src="./dashboard/js/validateselect.js"></script>
 
 <script type="text/javascript">
     $(document).ready(function () {
